@@ -1,5 +1,6 @@
 # node-skanetrafiken
-[![Build Status](https://travis-ci.org/axelniklasson/node-skanetrafiken.svg?branch=feature%2Ftests)](https://travis-ci.org/axelniklasson/node-skanetrafiken)
+[![Build Status](https://travis-ci.org/axelniklasson/node-skanetrafiken.svg?branch=master)](https://travis-ci.org/axelniklasson/node-skanetrafiken)
+[![Coverage Status](https://coveralls.io/repos/axelniklasson/node-skanetrafiken/badge.svg?branch=master)](https://coveralls.io/r/axelniklasson/node-skanetrafiken?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/axelniklasson/node-skanetrafiken.svg)](https://github.com/axelniklasson/node-skanetrafiken/issues)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
