@@ -4,7 +4,16 @@
   "description": "Node.js wrapper for Skånetrafikens open API.",
   "author": "Axel Niklasson <axel.niklasson@live.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axelniklasson/node-skanetrafiken.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axelniklasson/node-skanetrafiken/issues"
+  },
+  "homepage": "https://github.com/axelniklasson/node-skanetrafiken",
   "dependencies": {
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "xml2js": "^0.4.17"
   }
 }

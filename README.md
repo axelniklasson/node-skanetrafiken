@@ -5,11 +5,26 @@ Skånetrafikens official API documentation can be found [here](http://www.labs.s
 
 ## Features
 Below are a small set of featured intended to be implemented.
-- [ ] Promise-based wrappers for all API endpoints
-- [ ] Possibility to receive data in either XML or JSON (only XML is supported by the official API)
+- [ ] Wrappers for all API-based endpoints
+- [ ] Return data in JSON (XML is supported by the official API, so it will be included as-is without any modification)
+
+## Usage
+Below shows a simple example of finding a stop by name. Docs will be added.
+```
+// index.js
+
+var nodeSkanetraiken = require('node-skanetrafiken');
+
+nodeSkanetraiken.findStop('Kristianstad', function(results, err) {
+    if (!err) {
+        // Do something with the results
+    }
+});
+```
 
 ## Dependencies
 * [Request](https://www.npmjs.com/package/request)
+* [xml2js](https://www.npmjs.com/package/xml2js)
 
 ## License
 This package is MIT licensed.
