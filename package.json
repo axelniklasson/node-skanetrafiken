@@ -4,6 +4,9 @@
   "description": "Node.js wrapper for Skånetrafikens open API.",
   "author": "Axel Niklasson <axel.niklasson@live.com>",
   "license": "MIT",
+  "scripts": {
+      "test": "./node_modules/mocha/bin/mocha test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/axelniklasson/node-skanetrafiken.git"
@@ -15,5 +18,9 @@
   "dependencies": {
     "request": "^2.79.0",
     "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
   }
 }
