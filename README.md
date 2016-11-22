@@ -1,4 +1,5 @@
 # node-skanetrafiken
+[![npm version](https://badge.fury.io/js/node-skanetrafiken.svg)](https://badge.fury.io/js/node-skanetrafiken)
 [![Build Status](https://travis-ci.org/axelniklasson/node-skanetrafiken.svg?branch=master)](https://travis-ci.org/axelniklasson/node-skanetrafiken)
 [![Coverage Status](https://coveralls.io/repos/axelniklasson/node-skanetrafiken/badge.svg?branch=master)](https://coveralls.io/r/axelniklasson/node-skanetrafiken?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/axelniklasson/node-skanetrafiken.svg)](https://github.com/axelniklasson/node-skanetrafiken/issues)
@@ -12,6 +13,12 @@ Skånetrafikens official API documentation can be found [here](http://www.labs.s
 Below are a small set of featured intended to be implemented.
 - [ ] Wrappers for all API-based endpoints
 - [ ] Return data in JSON (XML is supported by the official API, so it will be included as-is without any modification)
+
+## Installation
+This package is published to [npm](https://www.npmjs.com/package/node-skanetrafiken) and can easily be installed using
+```
+npm install node-skanetrafiken
+```
 
 ## Usage
 Below shows a simple example of finding a stop by name. Docs will be added.
