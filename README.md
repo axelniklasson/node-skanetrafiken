@@ -5,8 +5,8 @@ Skånetrafikens official API documentation can be found [here](http://www.labs.s
 
 ## Features
 Below are a small set of featured intended to be implemented.
-[ ] Promise-based wrappers for all API endpoints
-[ ] Possibility to receive data in either XML or JSON (only XML is supported by the official API)
+- [ ] Promise-based wrappers for all API endpoints
+- [ ] Possibility to receive data in either XML or JSON (only XML is supported by the official API)
 
 ## Dependencies
 * [Request](https://www.npmjs.com/package/request)
