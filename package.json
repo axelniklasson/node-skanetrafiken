@@ -1,0 +1,10 @@
+{
+  "name": "node-skanetrafiken",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for Skånetrafikens open API.",
+  "author": "Axel Niklasson <axel.niklasson@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
