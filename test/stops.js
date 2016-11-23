@@ -1,6 +1,6 @@
 var chai = require('chai');
 var expect = chai.expect;
-var nodeSkanetrafiken = require('../lib/skanetrafiken');
+var nodeSkanetrafiken = require('../lib/node_skanetrafiken');
 
 /* findStop */
 describe('Find stop by name with correct parameters', function() {

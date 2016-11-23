@@ -1,1 +1,1 @@
-module.exports = require('./lib/skanetrafiken');
+module.exports = require('./lib/node_skanetrafiken');
