@@ -4,10 +4,10 @@ var nodeSkanetrafiken = require('../lib/node_skanetrafiken');
 
 /* validate */
 describe('Call a random function in the API with correct parameters', function(done) {
-    it('should not be validated', function(done) {
-        nodeSkanetrafiken.findStop(function(results, err) {
-            expect(results).to.be.null;
-            expect(err).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
+    it('should be validate and successfully return data', function(done) {
+        nodeSkanetrafiken.findStop({ name: 'Kristianstad' }, function(results, err) {
+            expect(results).to.not.be.null;
+            expect(err).to.be.null;
             done();
         });
     });
