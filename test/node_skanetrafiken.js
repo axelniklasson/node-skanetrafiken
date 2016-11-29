@@ -4,7 +4,7 @@ var nodeSkanetrafiken = require('../lib/node_skanetrafiken');
 
 /* validate */
 describe('Call a random function in the API with correct parameters', function(done) {
-    it('should be validate and successfully return data', function(done) {
+    it('should be validated and successfully return data', function(done) {
         nodeSkanetrafiken.findStop({ name: 'Kristianstad' }, function(results, err) {
             expect(results).to.not.be.null;
             expect(err).to.be.null;

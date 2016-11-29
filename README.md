@@ -16,7 +16,7 @@ Below are a small set of featured intended to be implemented.
 - [x] /querystation.asp
 - [x] /neareststation.asp
 - [x] /stationresults.asp
-- [ ] /trafficmeans.asp
+- [x] /trafficmeans.asp
 - [ ] /journeypath.asp
 
 ## Limitations
