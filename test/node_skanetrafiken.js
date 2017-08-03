@@ -4,17 +4,17 @@ var nodeSkanetrafiken = require('../lib/node_skanetrafiken');
 
 /* validate */
 describe('Call a random function in the API with correct parameters', function(done) {
-    it('should not be validated', function(done) {
-        nodeSkanetrafiken.findStop(function(results, err) {
-            expect(results).to.be.null;
-            expect(err).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
+    it('Should be validated and successfully return data', function(done) {
+        nodeSkanetrafiken.findStop({ name: 'Kristianstad' }, function(results, err) {
+            expect(results).to.not.be.null;
+            expect(err).to.be.null;
             done();
         });
     });
 });
 
 describe('Call a random function in the API without correct parameters', function(done) {
-    it('should not be validated', function(done) {
+    it('Should not be validated', function(done) {
         nodeSkanetrafiken.findStop(function(results, err) {
             expect(results).to.be.null;
             expect(err).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
@@ -24,7 +24,7 @@ describe('Call a random function in the API without correct parameters', functio
 });
 
 describe('Call a random function in the API with options parameter empty in wrong order', function(done) {
-    it('should not be validated', function(done) {
+    it('Should not be validated', function(done) {
         nodeSkanetrafiken.findStop({}, function(results, err) {
             expect(results).to.be.null;
             expect(err).to.equal('Options object can not be empty.');
@@ -34,7 +34,7 @@ describe('Call a random function in the API with options parameter empty in wron
 });
 
 describe('Call a random function in the API with correct parameters, but in wrong order', function(done) {
-    it('should not be validated', function(done) {
+    it('Should not be validated', function(done) {
         nodeSkanetrafiken.findStop(function(results, err) {
             expect(results).to.be.null;
             expect(err).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
@@ -44,7 +44,7 @@ describe('Call a random function in the API with correct parameters, but in wron
 });
 
 describe('Call a random function in the API with options parameter empty in wrong order', function(done) {
-    it('should not be validated', function(done) {
+    it('Should not be validated', function(done) {
         nodeSkanetrafiken.findStop(function(results, err) {
             expect(results).to.be.null;
             expect(err).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
@@ -54,7 +54,7 @@ describe('Call a random function in the API with options parameter empty in wron
 });
 
 describe('Call a random function in the API with two objects as parameters', function() {
-    it('should not be validated', function() {
+    it('Should not be validated', function() {
         expect(nodeSkanetrafiken.findStop({}, {})).to.equal('Please provide options object as a primary parameter and then the callback. Check the docs.');
     });
 });

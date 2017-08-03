@@ -4,3 +4,5 @@ node_modules
 *.log
 yarn.lock
 demo.js
+*.swp
+test.js
