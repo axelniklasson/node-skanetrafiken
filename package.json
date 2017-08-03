@@ -1,6 +1,6 @@
 {
   "name": "node-skanetrafiken",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js wrapper for Skånetrafikens open API.",
   "author": "Axel Niklasson <hello@axelniklasson.se>",
   "license": "MIT",
