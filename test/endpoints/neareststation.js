@@ -4,7 +4,7 @@ var nodeSkanetrafiken = require('../../lib/node_skanetrafiken');
 
 /* findNearestStops */
 describe('Find nearest stops by names with correct parameters', function() {
-    it('should successfully return nearest stops', function(done) {
+    it('Should successfully return nearest stops', function(done) {
         nodeSkanetrafiken.findNearestStops({ x: 6167930, y: 1323215, radius: 500 }, function(results, err) {
             expect(results).to.not.be.empty;
             expect(err).to.be.null;
@@ -14,7 +14,7 @@ describe('Find nearest stops by names with correct parameters', function() {
 });
 
 describe('Find nearest stops by names without radius', function() {
-    it('should successfully return nearest stops', function(done) {
+    it('Should successfully return nearest stops', function(done) {
         nodeSkanetrafiken.findNearestStops({ x: 6167930, y: 1323215 }, function(results, err) {
             expect(results).to.not.be.empty;
             expect(err).to.be.null;
@@ -24,7 +24,7 @@ describe('Find nearest stops by names without radius', function() {
 });
 
 describe('Find nearest stops within specified radius', function() {
-    it('should successfully return nearest stops, all within specified radius', function(done) {
+    it('Should successfully return nearest stops, all within specified radius', function(done) {
         nodeSkanetrafiken.findNearestStops({ x: 6167930, y: 1323215, radius: 500 }, function(results, err) {
             expect(results).to.not.be.empty;
             expect(err).to.be.null;

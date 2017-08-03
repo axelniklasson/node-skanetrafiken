@@ -10,18 +10,20 @@ Node.js wrapper for Skånetrafiken's Open API. I recently had a night off and th
 Skånetrafikens official API documentation can be found [here](http://www.labs.skanetrafiken.se/api.asp) and this wrapper is written for the latest version (v2.2).
 
 ## Implemented endpoints
-Below are a small set of featured intended to be implemented.
+Below are the implemented endpoints.
 - [x] /querypage.asp
-- [ ] /resultspage.asp
+- [x] /resultspage.asp
 - [x] /querystation.asp
 - [x] /neareststation.asp
 - [x] /stationresults.asp
 - [x] /trafficmeans.asp
 - [ ] /journeypath.asp
 
+Documentation for this package can be found in the Wiki.
+
 ## Limitations
 ### XML to JSON conversion
-I am currently using a package called [xml2js](https://www.npmjs.com/package/xml2js) for the conversion between XML and JSON and no other formatting of the data will be provided. It is to be used as-is. In the future, returning data in XML should also be supported.
+I am currently using a package called [xml2js](https://www.npmjs.com/package/xml2js) for the conversion between XML and JSON and no other formatting of the data will be provided. It is to be used as-is. In the future, returning data in XML Should also be supported.
 
 ## Installation
 This package is published to [npm](https://www.npmjs.com/package/node-skanetrafiken) and can easily be installed using
@@ -30,7 +32,7 @@ npm install node-skanetrafiken
 ```
 
 ## Usage
-Below shows a simple example of finding a stop by name. Docs for all endpoints will be added.
+Below shows a simple example of finding a stop by name. Docs for all endpoints can be found in the Wiki.
 ```
 // demo.js
 
@@ -56,7 +58,7 @@ npm test
 ```
 
 ### Contributing
-Pull Requests are always welcome. All PRs should contain appropriate tests and submitted to the ``development`` branch. PRs that break the build in Travis will not be accepted, for obvious reasons.
+Pull Requests are always welcome. All PRs Should contain appropriate tests and submitted to the ``development`` branch. PRs that break the build in Travis will not be accepted, for obvious reasons.
 
 ## License
 This package is MIT licensed.
