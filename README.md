@@ -32,7 +32,7 @@ npm install node-skanetrafiken
 ```
 
 ## Usage
-Below shows a simple example of finding a stop by name. Docs for all endpoints can be found in the Wiki.
+Below shows a simple example of finding a stop by name. Docs for all endpoints can be found in the [Wiki](https://github.com/axelniklasson/node-skanetrafiken/wiki/API-documentation).
 ```
 // demo.js
 
