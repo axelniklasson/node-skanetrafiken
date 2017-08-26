@@ -124,3 +124,13 @@ describe('Find journeys in specified transport mode', function() {
         });
     });
 });
+
+describe('Find journeys with missing parameters', function() {
+    it('Should fail to return journeys', function(done) {
+        nodeSkanetrafiken.getJourneys({ from: {} }, function(results, err) {
+            expect(results).to.be.null;
+            expect(err).to.equal('Invalid opts object. Should have objects from and to and action.');
+            done();
+        });
+    });
+});

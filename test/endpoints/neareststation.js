@@ -36,3 +36,12 @@ describe('Find nearest stops within specified radius', function() {
     });
 });
 
+describe('Find nearest stops without specifying x and y', function() {
+    it('Should fail to return nearest stops', function(done) {
+        nodeSkanetrafiken.findNearestStops({ radius: 500 }, function(results, err) {
+            expect(results).to.be.null;
+            expect(err).to.equal('Parameters x and y must be specified.');
+            done();
+        });
+    });
+});
