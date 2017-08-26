@@ -17,7 +17,7 @@ Below are the implemented endpoints.
 - [x] /neareststation.asp
 - [x] /stationresults.asp
 - [x] /trafficmeans.asp
-- [ ] /journeypath.asp
+- [x] /journeypath.asp
 
 Documentation for this package can be found in the Wiki.
 
